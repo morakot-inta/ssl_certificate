@@ -1,4 +1,0 @@
-Method for gennarate SSL certificate 
-1. export key.txt and cert.cer from pfx file
-2. create bundle file bundle.cer, this file will include intermedia and root cert. 
-3. create pfx cert file by openssl commmand 
