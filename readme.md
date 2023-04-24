@@ -14,3 +14,9 @@ openssl req -x509 -new -nodes -sha512 -day 365 -key ca.key -out ca.crt
 ```
 openssl pkcs12 -inkey ca.key -in ca.crt -export -out ca.pfx
 ```
+
+
+### Generate SSL Cert for TCP including Intermedia Cert and Root Cert.
+1. export key.txt and cert.cer from pfx file
+2. create bundle file bundle.cer, this file will include intermedia and root cert. 
+3. create pfx cert file by openssl commmand 
